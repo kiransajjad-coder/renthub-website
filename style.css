@@ -1,0 +1,489 @@
+/* ==============================
+   GLOBAL STYLING
+============================== */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+}
+
+.text-gold {
+    color: #d4af37 !important;
+}
+
+.btn-gold {
+    background: #d4af37;
+    color: #000;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background: #c29b2e;
+    color: #000;
+}
+
+.btn-dark {
+    background: #111;
+    border: none;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+    background: transparent;
+    padding: 15px 0;
+    transition: 0.4s;
+}
+
+.navbar.scrolled {
+    background: #000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important;
+}
+
+.logo-text {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://cdn.mos.cms.futurecdn.net/QmY5fRUXJEtnzhTgXLSY5A.jpg') center/cover;
+    padding: 180px 0 120px;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+/* ==============================
+   SEARCH BOX
+============================== */
+
+.search-container {
+    background: #fff;
+    margin-top: -60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+
+.search-box {
+    padding: 15px;
+    border-right: 1px solid #eee;
+}
+
+.search-box:last-child {
+    border-right: none;
+}
+
+.search-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+}
+
+/* ==============================
+   FEATURE ICONS SECTION
+============================== */
+
+.fa-2x {
+    font-size: 28px;
+}
+
+/* ==============================
+   CATEGORY CARDS
+============================== */
+
+.cat-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cat-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.cat-card:hover img {
+    transform: scale(1.1);
+}
+
+.cat-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.cat-card:hover .cat-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+}
+
+/* ==============================
+   PRODUCT CARDS
+============================== */
+
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.card-price {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #d4af37;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ==============================
+   HOW IT WORKS
+============================== */
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+    background: #111;
+    color: #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 22px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background: #0b0b0b;
+    color: #aaa;
+    padding: 80px 0 30px;
+}
+
+footer h4,
+footer h6 {
+    color: #fff;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #d4af37 !important;
+}
+
+footer input {
+    background: #1a1a1a !important;
+    border-radius: 30px 0 0 30px;
+    padding-left: 20px;
+}
+
+footer .btn-gold {
+    border-radius: 0 30px 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Hot Rentals Section Styling --- */
+.bg-light-gray { background-color: #fcfcfc; }
+
+/* View All Button */
+.btn-view-all {
+    color: var(--luxury-gold);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #bacc18;
+    transition: all 0.3s ease;
+}
+.btn-view-all:hover {
+    background: var(--luxury-gold);
+    color: rgb(224, 204, 17);
+    border-color: var(--luxury-gold);
+}
+
+/* Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-img-wrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* Price Tag Style */
+.card-price-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(15, 15, 15, 0.85);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.card-price-tag span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Info Section */
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.location, .rating {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Rent Now Button */
+.btn-rent-now {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-rent-now:hover {
+    background: var(--luxury-gold);
+    color: black;
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+}
+
+/* Hover Effects */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1) !important;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}
+
+/* Badge Style */
+.badge-status {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: var(--luxury-gold);
+    color: #fff;
+    font-size: 0.7rem;
+    text-uppercase: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+
+
+
+
+/* Navbar Background & Border */
+.custom-nav {
+    background: #0f172a !important; /* Deep Dark Navy */
+    border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+/* Logo Container - Circle Remove & Transparency Fix */
+.logo-container {
+    background: transparent !important; /* Background clear */
+    border: none !important;           /* Border remove */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;              /* Perfect Size */
+    width: auto;
+    border-radius: 0 !important; /* Forcefully remove circle */
+    object-fit: contain;
+    
+    /* Agar image ka background white hai to ye usay transparent blend karega */
+    mix-blend-mode: lighten; 
+    
+    /* Subtle Gold Glow */
+    
+}
+
+/* Logo Text Styling */
+.logo-text {
+    letter-spacing: -0.5px;
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Modern Font */
+}
+
+/* Become Vendor Button - High End Look */
+.btn-vendor-nav {
+    background: linear-gradient(45deg, #d4af37, #f1c40f);
+    color: #000 !important;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s all ease;
+    border: 1px solid transparent;
+}
+
+.btn-vendor-nav:hover {
+    background: transparent;
+    color: #d4af37 !important;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Nav Links Hover Effect */
+.nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background: #d4af37;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 70%;
+    left: 15%;
+}
+
+
+
+
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .search-container {
+        margin-top: -30px;
+    }
+
+    .search-box {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+}
